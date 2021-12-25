@@ -6,9 +6,8 @@ description:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: headshot1.jpg
   address: >
-    <p>555 your office number</p>
     <p>20 Washington Road 256B </p>
     <p>Princeton, NJ 08542</p>
 
