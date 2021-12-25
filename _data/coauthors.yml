@@ -1,14 +1,12 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Contreras":
+  - firstname: ["Dante", "D."]
+    url: https://econ.uchile.cl/es/academico/dcontrer
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Mu\~{n}oz":
+  - firstname: ["Pablo", "P."]
+    url: https://sites.google.com/view/pablomh
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+
 
 "Bach": 
   - firstname: ["Johann Sebastian", "J. S."]
