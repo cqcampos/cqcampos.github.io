@@ -85,7 +85,7 @@ permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: 
 
 # Comments
 disqus_shortname: al-folio # put your disqus shortname
@@ -99,7 +99,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: 
     permalink: /news/:path/
   projects:
     output: 
