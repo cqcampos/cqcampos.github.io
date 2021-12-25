@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /CV/
-title: CV
+title: cv
 description: CV
 nav: true
 ---
 
-My CV can be found here. 
+You can find my CV [here.](https://cqcampos.github.io/assets/cv.pdf) 
