@@ -20,4 +20,4 @@ I am a labor economist currently focusing on the economics of education.  Before
 
 I will join the University of Chicago's Booth School of Business as an Assistant Professor in 2022 after spending one year as an Industrial Relations Section Fellow at Princeton University.
 
-Email: ccampos@princeton.edu
+Email: Christopher.Campos@chicagobooth.edu
