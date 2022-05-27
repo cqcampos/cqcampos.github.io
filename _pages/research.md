@@ -14,7 +14,7 @@ nav: true
 {% bibliography -f wp %}
 
 <!-- Work in Progress --> 
-<h3  class="pubyear">In the Pipeline</h3>
+<h3  class="pubyear">Work in Progress</h3>
 {% bibliography -f pipeline %}
 
 </div>
