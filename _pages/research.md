@@ -13,7 +13,7 @@ nav: true
 <h3  class="pubyear">Working Papers</h3>
 {% bibliography -f wp %}
 
-<!-- In the Pipeline --> 
+<!-- Work in Progress --> 
 <h3  class="pubyear">In the Pipeline</h3>
 {% bibliography -f pipeline %}
 
