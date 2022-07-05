@@ -17,4 +17,7 @@ nav: true
 <h3  class="pubyear">Work in Progress</h3>
 {% bibliography -f pipeline %}
 
+ <!-- Other Publications --> 
+<h3  class="pubyear">Other Publications</h3>
+{% bibliography -f other %}
 </div>
