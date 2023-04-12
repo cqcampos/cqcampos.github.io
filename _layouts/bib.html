@@ -132,8 +132,16 @@
     {% if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
     {% endif %}
+    {% if entry.pap %}
+      {% if entry.pap contains '://' %}
+        <a href="{{ entry.pap }}" class="btn btn-sm z-depth-0" role="button">PAP</a>
+      {% else %}
+      <a href="{{ entry.pap | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PAP</a>
+    {% endif %}
+    {% endif %}   
     </div>
 
+    
     <!-- Hidden abstract block -->
     {% if entry.abstract %}
     <div class="abstract hidden">
