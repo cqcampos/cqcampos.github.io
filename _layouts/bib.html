@@ -129,6 +129,13 @@
       <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
       {% endif %}
     {% endif %}
+    {% if entry.pod %}
+      {% if entry.pod contains '://' %}
+      <a href="{{ entry.pod }}" class="btn btn-sm z-depth-0" role="button">Podcast</a>
+      {% else %}
+      <a href="{{ entry.pod | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Podcast</a>
+      {% endif %}
+    {% endif %}
     {% if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
     {% endif %}
