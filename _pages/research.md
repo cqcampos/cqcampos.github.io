@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /research/
-title: 
-description:
+title: research
+description: 
 years: [2021, 2022]
 nav: true
 ---
