@@ -12,11 +12,11 @@ profile:
     <p> Chicago, IL 60637 </p>
 
 news:   # includes a list of news items
-selected_papers:  # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an Assistant Professor of Economics and Biehler Junior Faculty Fellow at the University of Chicago Booth School of Business. 
+I am an Assistant Professor of Economics and Biehler Junior Faculty Fellow at the University of Chicago Booth School of Business. I am also a Faculty Research Fellow at the National Bureau of Economic Research (NBER).
 
 Before pursuing higher education, I served in the United States Marine Corps and served tours in Iraq and Southeast Asia. I received my PhD in Economics from UC Berkeley in 2021 and spent one year as a Postdoctoral Research Associate with the Industrial Relations Section at Princeton University. 
 
