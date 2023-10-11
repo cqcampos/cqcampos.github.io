@@ -22,8 +22,4 @@ Before pursuing higher education, I served in the United States Marine Corps and
 
 Email: Christopher.Campos@chicagobooth.edu
 
-<!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/christopher-campos/oh20232024'});return false;">Sign up for office hours</a>
-<!-- Calendly link widget end -->
+Sign up for office hours [here.](https://calendly.com/christopher-campos/oh20232024) Please email me outlining what you would like to discuss the night before. 
