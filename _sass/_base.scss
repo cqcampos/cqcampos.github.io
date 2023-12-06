@@ -129,6 +129,7 @@ blockquote {
     color: var(--global-text-color);
   }
   .navbar-nav .nav-item .nav-link {
+    text-transform: capitalize;
     color: var(--global-text-color);
     &:hover {
       color: var(--global-hover-color);
@@ -137,6 +138,7 @@ blockquote {
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
       font-weight: bolder;
+      text-transform: capitalize;
       color: var(--global-theme-color);
       &:hover {
         color: var(--global-hover-color);
