@@ -143,6 +143,13 @@
       <a href="{{ entry.pod | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Podcast</a>
       {% endif %}
     {% endif %}
+    {% if entry.code %}
+      {% if entry.code contains '://' %}
+      <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Replication Code</a>
+      {% else %}
+      <a href="{{ entry.code | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Replication Code</a>
+      {% endif %}
+    {% endif %}
     {% if entry.podbfi %}
       {% if entry.podbfi contains '://' %}
       <a href="{{ entry.podbfi }}" class="btn btn-sm z-depth-0" role="button">BFI Podcast</a>
