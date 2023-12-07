@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/
-title: research
+title: Research
 description: 
 years: [2021, 2022]
 nav: true
@@ -17,7 +17,7 @@ nav: true
 <h3  class="pubyear">Work in Progress</h3>
 {% bibliography -f pipeline %}
 
- <!-- Other Publications --> 
+ <!-- Other Writing --> 
 <h3  class="pubyear">Other Publications</h3>
 {% bibliography -f other %}
 </div>
