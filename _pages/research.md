@@ -9,6 +9,10 @@ nav: true
 
 <div class="publications">
 
+<!-- Publications and Accepted Work -->
+<h3  class="pubyear">Publications and Accepted Work</h3>
+{% bibliography -f publications %}
+
 <!-- Working Papers -->
 <h3  class="pubyear">Working Papers</h3>
 {% bibliography -f wp %}
