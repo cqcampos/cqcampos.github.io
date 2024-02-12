@@ -292,6 +292,9 @@ medium_zoom:
 
 # fix ES6 compatibility (Chris fix)
 assets:
-    external:
-      uglifier:
-        harmony: true
+  debug: false
+  compressors:
+    uglifier:
+      harmony: true
+      compress:
+        unused: false
