@@ -20,6 +20,7 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'webrick'
     gem 'jekyll-diagrams'
+    gem 'jekyll-github-metadata'
 end
 group :other_plugins do
     gem 'feedjira'
