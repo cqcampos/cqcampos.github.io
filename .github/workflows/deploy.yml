@@ -76,6 +76,8 @@ jobs:
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
       - name: Install and Build 🔧
+        env:
+          PAGES_REPO_NWO: cqcampos/cqcampos.github.io
         run: |
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
