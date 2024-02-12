@@ -84,6 +84,7 @@ jobs:
       - name: Install and Build 🔧
         env:
           PAGES_REPO_NWO: cqcampos/cqcampos.github.io
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
