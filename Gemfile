@@ -21,6 +21,7 @@ group :jekyll_plugins do
     gem 'webrick'
     gem 'jekyll-diagrams'
     gem 'jekyll-github-metadata'
+    gem 'jekyll-target-blank'
 end
 group :other_plugins do
     gem 'feedjira'
