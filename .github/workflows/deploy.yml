@@ -78,7 +78,6 @@ jobs:
           PAGES_REPO_NWO: cqcampos/cqcampos.github.io
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          export JEKYLL_ENV=production
           bundle exec jekyll build --lsi
       - name: Setup deploy options
         id: setup
