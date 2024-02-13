@@ -77,7 +77,6 @@ jobs:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gem install bundler
-          bundle config set --local deployment 'true'
           bundle install
           bundle update
           bundle exec jekyll build --lsi
