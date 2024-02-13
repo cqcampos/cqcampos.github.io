@@ -56,7 +56,6 @@ permissions:
 
 jobs:
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -93,7 +92,7 @@ jobs:
             echo "::set-output name=SRC_BRANCH::${GITHUB_REF#refs/heads/}"
           fi
           echo "::set-output name=DEPLOY_BRANCH::gh-pages"
-    - name: Deploy website 
-      run:  yes | bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
+      - name: Deploy website 
+        run:  yes | bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
                     --src ${{ steps.setup.outputs.SRC_BRANCH }} 
                     --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }} 
