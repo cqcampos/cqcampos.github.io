@@ -64,6 +64,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.0.2"
+          bundler-version: '2.1.4' # Specify the Bundler version you're using locally
           bundler-cache: true
       - name: Setup Node.js
         uses: actions/setup-node@v2
