@@ -65,6 +65,8 @@ jobs:
         with:
           ruby-version: "3.0.2"
           bundler-cache: true
+      - name: Install latest Bundler
+        run: gem install bundler
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
