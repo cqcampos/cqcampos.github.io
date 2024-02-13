@@ -22,7 +22,6 @@ group :jekyll_plugins do
     gem 'jekyll-diagrams'
     gem 'jekyll-github-metadata'
     gem 'jekyll-target-blank'
-    gem 'install bundler'
 end
 group :other_plugins do
     gem 'feedjira'
