@@ -65,23 +65,20 @@ jobs:
         with:
           ruby-version: "3.0.2"
           bundler-cache: true
-      - name: Install latest Bundler
-        run: gem install bundler
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '14' # Specify the Node.js version you need
       - name: Install Mermaid CLI
         run: npm install -g @mermaid-js/mermaid-cli
-      - name: Explicit Bundle Install
-        run: |
-          bundle install
-          bundle update
       - name: Install and Build 🔧
         env:
           PAGES_REPO_NWO: cqcampos/cqcampos.github.io
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          gem install bundler
+          bundle install
+          bundle update
           bundle exec jekyll build --lsi
       - name: Setup deploy options
         id: setup
