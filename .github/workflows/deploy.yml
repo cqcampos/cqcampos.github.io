@@ -70,6 +70,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14' # Specify the Node.js version you need
+      - name: Install Dependencies
+        run: npm install
+      - name: Minify JavaScript
+        run: npx terser src/js -o dist/js --compress --mangle
       - name: Install Mermaid CLI
         run: npm install -g @mermaid-js/mermaid-cli
       - name: Explicit Bundle Install
