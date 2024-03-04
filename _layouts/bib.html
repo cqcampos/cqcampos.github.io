@@ -169,16 +169,16 @@
     {% endif %}
     {% if entry.videoenglish %}
       {% if entry.videoenglish contains '://' %}
-        <a href="{{ entry.pap }}" class="btn btn-sm z-depth-0" role="button">ZOC Video (English)</a>
+        <a href="{{ entry.videoenglish }}" class="btn btn-sm z-depth-0" role="button">ZOC Video (English)</a>
       {% else %}
-      <a href="{{ entry.pap | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PAP</a>
+      <a href="{{ entry.videoenglish | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">ZOC Video (English)</a>
     {% endif %}
     {% endif %}
     {% if entry.videospanish %}
       {% if entry.videospanish contains '://' %}
-        <a href="{{ entry.pap }}" class="btn btn-sm z-depth-0" role="button">ZOC Video (Spanish)</a>
+        <a href="{{ entry.videospanish }}" class="btn btn-sm z-depth-0" role="button">ZOC Video (Spanish)</a>
       {% else %}
-      <a href="{{ entry.pap | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PAP</a>
+      <a href="{{ entry.videospanish | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">ZOC Video (Spanish)</a>
     {% endif %}
     {% endif %}   
     </div>
