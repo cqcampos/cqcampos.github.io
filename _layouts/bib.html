@@ -180,7 +180,21 @@
       {% else %}
       <a href="{{ entry.videospanish | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">ZOC Video (Spanish)</a>
     {% endif %}
-    {% endif %}   
+    {% endif %}  
+    {% if cbr %}
+      {% if entry.cbr contains '://' %}
+        <a href="{{ entry.cbr }}" class="btn btn-sm z-depth-0" role="button">CBR</a>
+      {% else %}
+      <a href="{{ entry.cbr | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">CBR</a>
+    {% endif %}
+    {% endif %}  
+    {% if entry.thesevenfour %}
+      {% if entry.thesevenfour  contains '://' %}
+        <a href="{{ entry.thesevenfour  }}" class="btn btn-sm z-depth-0" role="button">The 74</a>
+      {% else %}
+      <a href="{{ entry.thesevenfour  | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">The 74</a>
+    {% endif %}
+    {% endif %}  
     </div>
 
     
