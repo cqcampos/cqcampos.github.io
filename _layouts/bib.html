@@ -195,6 +195,13 @@
       <a href="{{ entry.thesevenfour  | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">The 74</a>
     {% endif %}
     {% endif %}  
+    {% if entry.fordham %}
+      {% if entry.fordham  contains '://' %}
+        <a href="{{ entry.fordham  }}" class="btn btn-sm z-depth-0" role="button">Fordham Institute</a>
+      {% else %}
+      <a href="{{ entry.fordham  | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Fordham Institute</a>
+    {% endif %}
+    {% endif %}  
     </div>
 
     
