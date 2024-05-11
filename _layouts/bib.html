@@ -202,6 +202,13 @@
       <a href="{{ entry.fordham  | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Fordham Institute</a>
     {% endif %}
     {% endif %}  
+    {% if entry.marginal %}
+      {% if entry.marginal  contains '://' %}
+        <a href="{{ entry.marginal  }}" class="btn btn-sm z-depth-0" role="button">Marginal Revolution</a>
+      {% else %}
+      <a href="{{ entry.marginal  | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Marginal Revolution</a>
+    {% endif %}
+    {% endif %} 
     </div>
 
     
