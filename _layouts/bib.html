@@ -138,9 +138,9 @@
     {% endif %}
     {% if entry.pod %}
       {% if entry.pod contains '://' %}
-      <a href="{{ entry.pod }}" class="btn btn-sm z-depth-0" role="button">Podcast</a>
+      <a href="{{ entry.pod }}" class="btn btn-sm z-depth-0" role="button">AEI Podcast</a>
       {% else %}
-      <a href="{{ entry.pod | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Podcast</a>
+      <a href="{{ entry.pod | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">AEI Podcast</a>
       {% endif %}
     {% endif %}
     {% if entry.code %}
@@ -208,7 +208,14 @@
       {% else %}
       <a href="{{ entry.marginal  | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Marginal Revolution</a>
     {% endif %}
-    {% endif %} 
+    {% endif %}
+    {% if entry.goodonpaper %}
+    {% if entry.goodonpaper  contains '://' %}
+        <a href="{{ entry.goodonpaper  }}" class="btn btn-sm z-depth-0" role="button">Good on Paper Podcast</a>
+      {% else %}
+      <a href="{{ entry.goodonpaper  | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Good on Paper Podcast</a>
+    {% endif %}
+    {% endif %}
     </div>
 
     
