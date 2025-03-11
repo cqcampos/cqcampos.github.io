@@ -6,7 +6,7 @@ description:
 
 profile:
   align: right
-  image: Campos_019.jpg 
+  image: /assets/img/Campos_019.jpg 
   address: >
     <p> 5807 South Woodlawn Ave </p>
     <p> Chicago, IL 60637 </p>
