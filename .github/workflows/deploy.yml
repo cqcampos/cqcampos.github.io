@@ -60,13 +60,21 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.0.3"
           bundler-cache: true
+
       - name: Install Mermaid CLI
         run: npm install -g @mermaid-js/mermaid-cli
+
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
       - name: Install and Build 🔧
         env:
           PAGES_REPO_NWO: cqcampos/cqcampos.github.io
@@ -76,6 +84,7 @@ jobs:
           bundle install
           bundle update
           bundle exec jekyll build --lsi
+
       - name: Setup deploy options
         id: setup
         run: |
@@ -88,7 +97,8 @@ jobs:
             echo "::set-output name=SRC_BRANCH::${GITHUB_REF#refs/heads/}"
           fi
           echo "::set-output name=DEPLOY_BRANCH::gh-pages"
+
       - name: Deploy website 
         run:  yes | bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
                     --src ${{ steps.setup.outputs.SRC_BRANCH }} 
-                    --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }} 
+                    --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
