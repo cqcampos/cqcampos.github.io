@@ -43,7 +43,7 @@
           </li>
           {% endif %}
           <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: "title" %}
+          {% if p.nav and p.autogen == nil and p.title != 'RA Positions' and p.title != 'Principal Voices Project' %}
           {% for p in sorted_pages %}
           {% if p.nav and p.autogen == nil %}
           {% if p.dropdown %}
@@ -85,6 +85,30 @@
               {% endif %}
             </a>
           </li>
+            {% assign ra_page = site.pages | where: 'title', 'RA Positions' | first %}
+            {% if ra_page %}
+            <li class="nav-item {% if page.title == ra_page.title %}active{% endif %}">
+              <a class="nav-link" href="{{ ra_page.url | relative_url }}">
+                {{ ra_page.title }}
+                {% if page.title == ra_page.title %}
+                <span class="sr-only">(current)</span>
+                {% endif %}
+              </a>
+            </li>
+            {% endif %}
+
+            {% assign pv_page = site.pages | where: 'title', 'Principal Voices Project' | first %}
+            {% if pv_page %}
+            <li class="nav-item {% if page.title == pv_page.title %}active{% endif %}">
+              <a class="nav-link" href="{{ pv_page.url | relative_url }}">
+                {{ pv_page.title }}
+                {% if page.title == pv_page.title %}
+                <span class="sr-only">(current)</span>
+                {% endif %}
+              </a>
+            </li>
+            {% endif %}
+
           {% if site.enable_darkmode %}
             <div class = "toggle-container">
               <a id = "light-toggle">
