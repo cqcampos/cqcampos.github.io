@@ -20,6 +20,8 @@ I am currently a Visiting Assistant Professor of Economics at Harvard University
 
 Before pursuing higher education, I served in the United States Marine Corps and served tours in Iraq and Southeast Asia. I received my PhD in Economics from UC Berkeley in 2021 and spent one year as a Postdoctoral Research Associate with the Industrial Relations Section at Princeton University. 
 
+To learn more about the Principal Voices Project, go [here.](https://www.cqcampos.com/principal-voices-project/)
+
 Sign up for office hours [here.](https://calendly.com/christopher-campos/oh20232024)
 
 Email: Christopher.Campos@chicagobooth.edu or ccampos@fas.harvard.edu
