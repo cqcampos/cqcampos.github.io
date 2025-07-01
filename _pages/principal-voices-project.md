@@ -14,7 +14,15 @@ The Principal Voices Project keeps a steady finger on the pulse of K-12 leadersh
 - Rewarding: Each completed survey enters you in a gift-card raffle. We will post results from each raffle here.
 
 In return, participants get early access to concise reports and policy briefs distilled from your feedback. Our mission is simple: amplify frontline insights, inform data-driven decisions, and make sure principals—who run our schools—have a direct line to shape the future of education. Join us, lend your voice, and help turn lived experience into better student outcomes.
-
+<br>
+<br>
+<br>
 <h2  class="pubyear"> Current and forthcoming data collection </h2>
+<br>
 - Generative AI Adoption in K-12 schools
 - Accountability in 2025
+<br>
+<br>
+<br>
+<h2  class="pubyear"> Raffle Results </h2>
+- Results from the first raffle on 7/14 will be posted here.
