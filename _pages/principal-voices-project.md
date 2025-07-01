@@ -17,7 +17,7 @@ In return, participants get early access to concise reports and policy briefs di
 <br>
 <br>
 <br>
-<h2  class="pubyear"> Current and forthcoming data collection </h2>
+<h2  class="pubyear"> Current and Forthcoming Survey Themes </h2>
 <br>
 - Generative AI Adoption in K-12 schools
 <br>
