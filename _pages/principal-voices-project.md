@@ -26,4 +26,13 @@ In return, participants get early access to concise reports and policy briefs di
 <br>
 <br>
 <h2  class="pubyear"> Raffle Results </h2>
+<br>
 - Results from the first raffle on 7/14 will be posted here.
+<br>
+<br>
+<br>
+<h2  class="pubyear"> Principal Investigators </h2>
+<a href="https://cqcampos.com">Christopher Campos - University of Chicago Booth School of Business</a>
+<br>
+<a href="https://sites.google.com/site/jdsingletonecon/home?authuser=0">John Singleton - University of Rochester </a>
+
