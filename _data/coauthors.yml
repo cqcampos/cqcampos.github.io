@@ -51,14 +51,14 @@
     url: https://christopherneilson.github.io/
 
 "Barrios-Fernandez":
-  -firstname: "Andres"
+  -firstname: ["Andres"]
     url: https://andresbarriosf.github.io/
 
 "Kaila":
-  - firstname: "Martti"
+  - firstname: ["Martti"]
     url: https://marttikaila.com/
 
 "Virkola":
-  - firstname: "Tuomo"
+  - firstname: ["Tuomo"]
     url: https://sites.google.com/view/tuomovirkola
 
