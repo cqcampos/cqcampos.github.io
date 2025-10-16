@@ -26,10 +26,6 @@
   - firstname: ["Aparna"]
     url: https://www.capolicylab.org/staff/aparna-ramesh/
 
-"Martinez":
-  - firstname: ["Joan"]
-    url: https://joanjmartinez.com/
-
 "Bruhn":
   - firstname: ["Jesse"]
     url: https://www.jessebruhn.com/
@@ -51,7 +47,7 @@
     url: https://christopherneilson.github.io/
 
 "Barrios-Fernandez":
-  -firstname: ["Andres"]
+  - firstname: ["Andres"]
     url: https://andresbarriosf.github.io/
 
 "Kaila":
