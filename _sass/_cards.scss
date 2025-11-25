@@ -1,3 +1,10 @@
+// Ensure no-image column matches card background on hover
+.paper-card:hover .paper-image-col.no-image {
+    background: #f0f1f3 !important;
+}
+html[data-theme='dark'] .paper-card:hover .paper-image-col.no-image {
+    background: #2c2d31 !important;
+}
 // Dark mode card styles
 html[data-theme='dark'] .paper-card {
     background: #232324;
