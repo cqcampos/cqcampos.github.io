@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /research/
-title: Research
-description: 
+permalink: /research-test/
+title: Research Test
+description: Testing the new card layout
 years: [2021, 2022]
-nav: true
+nav: false
 ---
 
 <div class="publications">
@@ -17,13 +17,6 @@ nav: true
 <h3  class="pubyear">Working Papers</h3>
 {% bibliography -f wp --template bib_card %}
 
-<!-- Work in Progress --> 
-<h3  class="pubyear">Work in Progress</h3>
-{% bibliography -f pipeline --template bib_card %}
-
- <!-- Other Writing --> 
-<h3  class="pubyear">Other Publications</h3>
-{% bibliography -f other --template bib_card %}
 </div>
 
 <script>

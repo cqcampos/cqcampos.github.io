@@ -48,6 +48,22 @@ layout: default
       <div class="contact-note">{{ site.contact_note }}</div>
     </div>
     {% endif %}
+
+    <script>
+    // Abstract Toggle Script for About page
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.abstract-toggle').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const cardContent = btn.closest('.paper-content');
+                const abstract = cardContent.querySelector('.paper-abstract');
+                if (abstract) {
+                    abstract.classList.toggle('show');
+                }
+            });
+        });
+    });
+    </script>
   </article>
 
 </div>
