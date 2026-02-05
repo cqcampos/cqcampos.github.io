@@ -21,10 +21,6 @@ nav: true
 <h3  class="pubyear">Work in Progress</h3>
 {% bibliography -f pipeline --template bib_card %}
 
- <!-- Other Writing --> 
-<h3  class="pubyear">Other Publications</h3>
-{% bibliography -f other --template bib_card %}
-</div>
 
 <script>
     // Abstract Toggle Script
