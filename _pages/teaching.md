@@ -10,7 +10,7 @@ permalink: /teaching/
 
 
 <h3  class="pubyear"> Chicago Booth - MBA </h3>
-Microeconomics (BUSN 33001) - Winter 2026
+- Microeconomics (BUSN 33001) - Winter 2026
 
 <h3  class="pubyear"> Harvard University  </h3>
-Graduate Labor Economics (Econ 2810B) - Spring 2025 
+- Graduate Labor Economics (Econ 2810B) - Spring 2025 
