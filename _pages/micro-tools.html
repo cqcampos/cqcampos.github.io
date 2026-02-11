@@ -1,0 +1,181 @@
+---
+layout: page
+title: Interactive Microeconomics Tools
+permalink: /micro-tools/
+nav: false
+description: Interactive visualizations for BUS 33001 — Microeconomics at Chicago Booth
+---
+
+<link rel="stylesheet" href="/assets/css/micro-tools.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<div class="micro-tools-page">
+
+<!-- ============ Table of Contents ============ -->
+<div class="micro-toc">
+  <h4>Lecture 1: Supply and Demand</h4>
+  <ol>
+    <li><a href="#viz-01">Coffee at Booth: Building a Demand Curve</a></li>
+    <li><a href="#viz-02">Demand Shifters: Inferior vs Normal Goods</a></li>
+    <li><a href="#viz-03">Supply Shifters: Elastic vs Inelastic Supply</a></li>
+    <li><a href="#viz-04">The Elasticity Explorer</a></li>
+    <li><a href="#viz-05">Streaming Wars: Revenue and Unit Elasticity</a></li>
+  </ol>
+  <h4>Lecture 2: Taxes and Price Controls</h4>
+  <ol start="6">
+    <li><a href="#viz-06">Taxes: Where Does the Money Go?</a></li>
+    <li><a href="#viz-07">Who Bears the Tax? Elasticity and Tax Incidence</a></li>
+    <li><a href="#viz-08">Uber Surge Pricing: Price Ceilings and Wait Times</a></li>
+  </ol>
+</div>
+
+<!-- ============================================================ -->
+<!--  LECTURE 1: SUPPLY AND DEMAND                                 -->
+<!-- ============================================================ -->
+<h2 class="micro-lecture-header">Lecture 1: Supply and Demand</h2>
+
+<!-- ---- Viz 1 ---- -->
+<section id="viz-01" class="micro-viz-section">
+  <h3 class="micro-viz-title">1. Coffee at Booth: Building a Demand Curve</h3>
+  <p class="micro-scenario">100 Booth students numbered #0&#8211;#99, where person #i has WTP = $i. Drag the price line to see how many students buy at each price &#8212; the step function IS the demand curve. Toggle the smooth approximation Q<sub>D</sub> = 100 &#8722; P.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-01"></div>
+      <div class="micro-info" id="info-01"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-01"></div>
+      <div class="micro-math" id="math-01"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 2 ---- -->
+<section id="viz-02" class="micro-viz-section">
+  <h3 class="micro-viz-title">2. Demand Shifters: Inferior vs Normal Goods</h3>
+  <p class="micro-scenario">When income rises, demand for inferior goods (Dollar General) shifts <em>left</em>, while demand for normal goods shifts <em>right</em>. But how much prices and quantities change depends on the <em>elasticity</em> of demand: steep (inelastic) demand like gasoline means big price swings; flat (elastic) demand like restaurant meals means big quantity swings.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-02"></div>
+      <div class="micro-info" id="info-02"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-02"></div>
+      <div class="micro-math" id="math-02"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 3 ---- -->
+<section id="viz-03" class="micro-viz-section">
+  <h3 class="micro-viz-title">3. Supply Shifters: Elastic vs Inelastic Supply</h3>
+  <p class="micro-scenario">San Francisco housing has <em>inelastic</em> (steep) supply &#8212; building more is extremely difficult. Houston has <em>elastic</em> (flat) supply &#8212; land is plentiful. The same cost shock produces very different outcomes: prices surge in SF, while quantity drops in Houston.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-03"></div>
+      <div class="micro-info" id="info-03"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-03"></div>
+      <div class="micro-math" id="math-03"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 4 ---- -->
+<section id="viz-04" class="micro-viz-section">
+  <h3 class="micro-viz-title">4. The Elasticity Explorer</h3>
+  <p class="micro-scenario">Elasticity varies along a linear demand curve: elastic near the top (high price, low quantity), inelastic near the bottom (low price, high quantity), and unit elastic at the midpoint. Switch between arc elasticity (two draggable points) and point elasticity (one point) to see the formulas in action.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-04"></div>
+      <div class="micro-info" id="info-04"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-04"></div>
+      <div class="micro-math" id="math-04"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 5 ---- -->
+<section id="viz-05" class="micro-viz-section">
+  <h3 class="micro-viz-title">5. Streaming Wars: Revenue and Unit Elasticity</h3>
+  <p class="micro-scenario">Online movie streaming: you buy rights for a fixed cost, then sell downloads at zero marginal cost. R(P) = P(100 &#8722; P). Revenue is maximized at unit elasticity (P*=50). Should you raise your price?</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-05"></div>
+      <div class="micro-info" id="info-05"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-05"></div>
+      <div class="micro-math" id="math-05"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!--  LECTURE 2: TAXES                                             -->
+<!-- ============================================================ -->
+<h2 class="micro-lecture-header">Lecture 2: Taxes and Price Controls</h2>
+
+<!-- ---- Viz 6 ---- -->
+<section id="viz-06" class="micro-viz-section">
+  <h3 class="micro-viz-title">6. Taxes: Where Does the Money Go?</h3>
+  <p class="micro-scenario">Q<sub>D</sub> = 50 &#8722; 2P, Q<sub>S</sub> = 3P &#8722; 15. No tax: P*=13, Q*=24, CS=144, PS=96. With t=$5: P<sub>D</sub>=16, P<sub>S</sub>=11, Q'=18, CS=81, PS=54, Rev=90, DWL=15. Legal incidence (seller vs buyer) is irrelevant &#8212; economic outcome is the same.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-06"></div>
+      <div class="micro-info" id="info-06"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-06"></div>
+      <div class="micro-math" id="math-06"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 7 ---- -->
+<section id="viz-07" class="micro-viz-section">
+  <h3 class="micro-viz-title">7. Who Bears the Tax? Elasticity and Tax Incidence</h3>
+  <p class="micro-scenario">Consumer share = &#949;<sub>S</sub> / (|&#949;<sub>D</sub>| + &#949;<sub>S</sub>). Tobacco: inelastic demand &#8594; consumers bear most of the tax. Marlboro Golds: elastic demand (people switch brands) &#8594; producers bear most. The more inelastic side bears more of the burden.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-07"></div>
+      <div class="micro-info" id="info-07"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-07"></div>
+      <div class="micro-math" id="math-07"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 8 ---- -->
+<section id="viz-08" class="micro-viz-section">
+  <h3 class="micro-viz-title">8. Uber Surge Pricing: Price Ceilings and Wait Times</h3>
+  <p class="micro-scenario">New Year's Eve: demand for Uber rides surges. With surge pricing, the price rises and the market clears &#8212; no shortage. But a "technical glitch" keeps the price at the old level: that's a price ceiling. The result? A shortage of rides and long wait times. When price can't ration, <em>time</em> does the rationing instead.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-08"></div>
+      <div class="micro-info" id="info-08"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-08"></div>
+      <div class="micro-math" id="math-08"></div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /.micro-tools-page -->
+
+<!-- ============ Scripts ============ -->
+<script src="/assets/js/micro-tools/core.js"></script>
+<script src="/assets/js/micro-tools/viz-01-coffee-demand.js"></script>
+<script src="/assets/js/micro-tools/viz-02-demand-shifters.js"></script>
+<script src="/assets/js/micro-tools/viz-03-supply-shifters.js"></script>
+<script src="/assets/js/micro-tools/viz-04-elasticity.js"></script>
+<script src="/assets/js/micro-tools/viz-05-revenue.js"></script>
+<script src="/assets/js/micro-tools/viz-06-taxes.js"></script>
+<script src="/assets/js/micro-tools/viz-07-tax-incidence.js"></script>
+<script src="/assets/js/micro-tools/viz-08-uber-surge.js"></script>
