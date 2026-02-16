@@ -336,8 +336,6 @@
     function drawConcert(colors) {
       var value = state.concertValue, price = state.ticketPrice;
       var shouldBuy = value > price;
-      var mentalTotal = 2 * price;
-      var mentalTrap = shouldBuy && value < mentalTotal;
 
       var W = chart.innerWidth, H = chart.innerHeight;
       var colW = W * 0.38;
@@ -366,16 +364,14 @@
       chart.plotArea.append('text')
         .attr('x', x1 + colW / 2).attr('y', rowY + 14)
         .attr('text-anchor', 'middle')
-        .style('fill', colors.textLight).style('font-size', '11px').style('opacity', 0.7)
+        .style('fill', colors.textLight).style('font-size', '11px')
         .text(sunkText1);
-      drawStrike(chart.plotArea, x1 + 15, x1 + colW - 15, rowY + 10, colors);
 
       chart.plotArea.append('text')
         .attr('x', x2 + colW / 2).attr('y', rowY + 14)
         .attr('text-anchor', 'middle')
-        .style('fill', colors.textLight).style('font-size', '11px').style('opacity', 0.7)
+        .style('fill', colors.textLight).style('font-size', '11px')
         .text(sunkText2);
-      drawStrike(chart.plotArea, x2 + 15, x2 + colW - 15, rowY + 10, colors);
 
       /* ---- Divider ---- */
       rowY += rowH + 12;
@@ -446,34 +442,11 @@
         .style('fill', colors.equilibrium).style('font-size', '14px').style('font-weight', 'bold')
         .text('\u2194 Same financial situation, same decision!');
 
-      /* ---- Mental accounting trap ---- */
-      if (mentalTrap) {
-        rowY += 28;
-        chart.plotArea.append('text')
-          .attr('x', x1 + colW / 2).attr('y', rowY)
-          .attr('text-anchor', 'middle')
-          .style('fill', colors.negative).style('font-size', '11px').style('font-weight', 'bold')
-          .text('\u26A0 Mental accounting trap:');
-        chart.plotArea.append('text')
-          .attr('x', x1 + colW / 2).attr('y', rowY + 16)
-          .attr('text-anchor', 'middle')
-          .style('fill', colors.negative).style('font-size', '11px')
-          .text('"I\u2019d be spending $' + mentalTotal + ' on a $' + value + ' concert!"');
-        chart.plotArea.append('text')
-          .attr('x', x1 + colW / 2).attr('y', rowY + 32)
-          .attr('text-anchor', 'middle')
-          .style('fill', colors.textLight).style('font-size', '10px')
-          .text('(But the first $' + price + ' is sunk!)');
-      }
-
       /* ---- Info panel ---- */
       var html = '<strong>Both situations are identical:</strong> you\u2019re $' + price + ' poorer (sunk cost) and deciding whether to spend $' + price + ' on $' + value + ' of enjoyment.';
 
       if (shouldBuy) {
         html += '<br><strong style="color:' + colors.positive + '">Buy the ticket!</strong> Concert value ($' + value + ') > Ticket price ($' + price + ').';
-        if (mentalTrap) {
-          html += '<br><em style="color:' + colors.negative + '">Mental accounting trap: losing the ticket makes people think "I\u2019d be spending $' + mentalTotal + ' total on a $' + value + ' concert." But the lost $' + price + ' is gone either way! If you\u2019d still buy after losing $' + price + ' in cash, you should buy after losing the ticket too \u2014 it\u2019s the same situation.</em>';
-        }
       } else {
         html += '<br><strong>Don\u2019t buy.</strong> Concert value ($' + value + ') \u2264 Ticket price ($' + price + ').';
         html += '<br><em>Not worth it regardless of the loss. Both scenarios agree.</em>';
@@ -489,14 +462,6 @@
           '&emsp;\\(\\text{Lost \\$' + price + ': sunk (irrelevant)}\\)';
         if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([el]);
       }
-    }
-
-    /* Helper: strikethrough line */
-    function drawStrike(g, x1, x2, y, colors) {
-      g.append('line')
-        .attr('x1', x1).attr('y1', y)
-        .attr('x2', x2).attr('y2', y)
-        .attr('stroke', colors.negative).attr('stroke-width', 1.5).attr('opacity', 0.6);
     }
 
     buildControls();

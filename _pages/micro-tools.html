@@ -50,6 +50,12 @@ description: Interactive visualizations for BUS 33001 — Microeconomics at Chic
     <li><a href="#viz-19">Opportunity Cost</a></li>
     <li><a href="#viz-20">The Sunk Cost Fallacy</a></li>
   </ol>
+  <h4>Lecture 6: Competitive Supply &amp; Costs</h4>
+  <ol start="21">
+    <li><a href="#viz-21">Cost Minimization: Iso-Cost Meets Isoquant</a></li>
+    <li><a href="#viz-22">Returns to Scale &amp; the Shape of Costs</a></li>
+    <li><a href="#viz-23">Short-Run vs Long-Run Costs</a></li>
+  </ol>
 </div>
 
 <!-- ============================================================ -->
@@ -397,6 +403,59 @@ description: Interactive visualizations for BUS 33001 — Microeconomics at Chic
   </div>
 </section>
 
+<!-- ============================================================ -->
+<!--  LECTURE 6: COMPETITIVE SUPPLY & COSTS                       -->
+<!-- ============================================================ -->
+<h2 class="micro-lecture-header">Lecture 6: Competitive Supply &amp; Costs</h2>
+
+<!-- ---- Viz 21 ---- -->
+<section id="viz-21" class="micro-viz-section">
+  <h3 class="micro-viz-title">21. Cost Minimization: Iso-Cost Meets Isoquant</h3>
+  <p class="micro-scenario">The firm must produce Q units using labor and capital. Drag the point along the isoquant (the constraint &#8212; all input mixes that produce exactly Q). At each position, the dashed tangent line shows the MRTS &#8212; how much capital the firm can trade for one more unit of labor while keeping output fixed. When MRTS &gt; r&#8343;/r&#8342;, the output-per-dollar from labor exceeds that of capital &#8212; use more labor. At the <em>tangency</em>, MRTS equals the input price ratio, which is the &#8220;bang for the buck&#8221; condition: MPL/r&#8343; = MPK/r&#8342;. In other words, the last dollar spent on labor produces exactly the same extra output as the last dollar spent on capital. Drag the point along the isoquant to see the bang for the buck condition in action. Change Q to see the isoquant shift.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-21"></div>
+      <div class="micro-info" id="info-21"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-21"></div>
+      <div class="micro-math" id="math-21"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 22 ---- -->
+<section id="viz-22" class="micro-viz-section">
+  <h3 class="micro-viz-title">22. Returns to Scale &amp; the Shape of Costs</h3>
+  <p class="micro-scenario">The Cobb-Douglas exponent sum (a+b) determines returns to scale, which in turn determines the shape of costs. <em>CRS</em> (a+b=1): linear total cost, constant MC. <em>DRS</em> (a+b&lt;1): convex total cost, increasing MC &#8212; each extra unit costs more. <em>IRS</em> (a+b&gt;1): concave total cost, decreasing MC &#8212; the firm benefits from scale.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-22"></div>
+      <div class="micro-info" id="info-22"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-22"></div>
+      <div class="micro-math" id="math-22"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 23 ---- -->
+<section id="viz-23" class="micro-viz-section">
+  <h3 class="micro-viz-title">23. Short-Run vs Long-Run Costs</h3>
+  <p class="micro-scenario">In the long run, you can adjust all inputs freely and costs are as low as possible. In the short run, some inputs are fixed &#8212; you&#8217;re stuck with the factory (capital) you already built. If demand turns out higher or lower than planned, you can only adjust labor, and that&#8217;s more expensive than if you could redesign the whole operation. The SR cost curve is always above the LR cost curve, except at the one output level your factory was designed for, where they just touch. This uses the lecture example: f(L,K) = 6&#8730;(LK), r&#8343; = 10, r&#8342; = 40. The LR cost is linear (CRS). Set Q&#8320; to choose your factory size, then move Q to see the cost of being stuck in the short run.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-23"></div>
+      <div class="micro-info" id="info-23"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-23"></div>
+      <div class="micro-math" id="math-23"></div>
+    </div>
+  </div>
+</section>
+
 </div><!-- /.micro-tools-page -->
 
 <!-- ============ Scripts ============ -->
@@ -421,3 +480,6 @@ description: Interactive visualizations for BUS 33001 — Microeconomics at Chic
 <script src="/assets/js/micro-tools/viz-18-isoquants.js"></script>
 <script src="/assets/js/micro-tools/viz-19-opportunity-cost.js"></script>
 <script src="/assets/js/micro-tools/viz-20-sunk-costs.js"></script>
+<script src="/assets/js/micro-tools/viz-21-cost-minimization.js"></script>
+<script src="/assets/js/micro-tools/viz-22-returns-to-scale.js"></script>
+<script src="/assets/js/micro-tools/viz-23-sr-lr-costs.js"></script>
