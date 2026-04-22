@@ -1,0 +1,381 @@
+/* ============================================================
+   Micro Tools - Interactive Economics Visualizations
+   BUS 33001 (Microeconomics) — Chicago Booth
+   ============================================================ */
+
+/* ---------- Layout & Sections ---------- */
+
+.micro-tools-page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.micro-toc {
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.micro-toc h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  color: var(--global-text-color);
+}
+
+.micro-toc h4:first-child {
+  margin-top: 0;
+}
+
+.micro-toc ol {
+  margin-bottom: 0.5rem;
+  padding-left: 1.6rem;
+}
+
+.micro-toc li {
+  font-size: 0.9rem;
+  margin-bottom: 0.15rem;
+}
+
+.micro-toc a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.micro-toc a:hover {
+  text-decoration: underline;
+}
+
+.micro-viz-section {
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.micro-viz-section:first-of-type {
+  border-top: none;
+}
+
+.micro-viz-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin-bottom: 0.4rem;
+}
+
+.micro-scenario {
+  font-size: 0.88rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* ---------- Chart Container ---------- */
+
+.micro-chart {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.micro-chart .micro-svg {
+  width: 100%;
+  display: block;
+}
+
+/* ---------- Controls ---------- */
+
+.micro-controls {
+  margin-bottom: 1rem;
+}
+
+.micro-slider-group {
+  margin-bottom: 0.75rem;
+}
+
+.micro-slider-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  margin-bottom: 0.15rem;
+}
+
+.micro-slider-value {
+  font-weight: 700;
+  color: var(--global-theme-color);
+}
+
+input.micro-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--global-divider-color);
+  outline: none;
+  cursor: pointer;
+}
+
+input.micro-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--global-theme-color);
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+input.micro-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--global-theme-color);
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* ---------- Buttons ---------- */
+
+.micro-btn {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--global-theme-color);
+  cursor: pointer;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.micro-btn:hover {
+  background: var(--global-theme-color);
+  color: #fff;
+}
+
+.micro-btn.active {
+  background: var(--global-theme-color);
+  color: #fff;
+}
+
+.micro-btn-sm {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* ---------- Dropdowns ---------- */
+
+.micro-select-group {
+  margin-bottom: 0.75rem;
+}
+
+.micro-select-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  margin-bottom: 0.2rem;
+}
+
+select.micro-select {
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  cursor: pointer;
+}
+
+/* ---------- Toggles ---------- */
+
+.micro-toggle-group {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.micro-toggle-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.82rem;
+  color: var(--global-text-color);
+  user-select: none;
+}
+
+.micro-toggle-label input {
+  display: none;
+}
+
+.micro-toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  background: var(--global-divider-color);
+  border-radius: 10px;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.micro-toggle-switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.micro-toggle-label input:checked + .micro-toggle-switch {
+  background: var(--global-theme-color);
+}
+
+.micro-toggle-label input:checked + .micro-toggle-switch::after {
+  transform: translateX(16px);
+}
+
+/* ---------- Info Boxes ---------- */
+
+.micro-info {
+  background: var(--global-code-bg-color);
+  border-radius: 5px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.82rem;
+  color: var(--global-text-color);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.micro-info strong {
+  color: var(--global-text-color);
+}
+
+/* ---------- Math Display ---------- */
+
+.micro-math {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--global-text-color);
+  margin: 0.5rem 0 0.5rem;
+  min-height: 1.5em;
+}
+
+/* ---------- Lecture Headers ---------- */
+
+.micro-lecture-header {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--global-theme-color);
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--global-theme-color);
+}
+
+/* ---------- Preset Button Group ---------- */
+
+.micro-preset-group {
+  margin-bottom: 0.75rem;
+}
+
+.micro-preset-group .micro-preset-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  margin-bottom: 0.25rem;
+}
+
+/* ---------- Legend ---------- */
+
+.micro-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color);
+}
+
+.micro-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.micro-legend-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ---------- Stacked Bar (Tax Incidence) ---------- */
+
+.micro-stacked-bar {
+  margin-top: 0.5rem;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 767px) {
+  .micro-controls {
+    margin-bottom: 0.75rem;
+  }
+
+  .micro-viz-section .row {
+    flex-direction: column-reverse;
+  }
+
+  .micro-viz-section .row > [class*="col-lg-4"] {
+    order: 2;
+  }
+
+  .micro-viz-section .row > [class*="col-lg-8"] {
+    order: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .micro-controls {
+    padding-right: 1rem;
+  }
+}
+
+/* ---------- SVG Text Color (dark mode) ---------- */
+
+.micro-svg text {
+  fill: var(--global-text-color);
+}
+
+/* ---------- Drag cursor hints ---------- */
+
+.price-line-group {
+  cursor: ns-resize;
+}
+
+.drag-point {
+  cursor: grab;
+}
+
+.drag-point:active {
+  cursor: grabbing;
+}
