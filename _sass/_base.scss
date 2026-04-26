@@ -69,6 +69,24 @@ blockquote {
   }
 }
 
+@media (max-width: 575.98px) {
+  .profile {
+    float: none !important;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    max-width: 100%;
+
+    .address {
+      white-space: normal;
+      overflow-wrap: anywhere;
+
+      p {
+        display: block;
+      }
+    }
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;

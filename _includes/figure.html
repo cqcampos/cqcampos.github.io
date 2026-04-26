@@ -1,14 +1,22 @@
-{% assign path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" %}
+{% assign image_path = include.path %}
+{% assign image_base = image_path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" %}
 
 <figure>
 
   <picture>
-    {% for i in site.imagemagick.widths %}
-      <source media="(max-width: {{ i }}px)" srcset="{{ path | relative_url }}-{{ i }}.webp">
-    {% endfor %}
+    {% if site.imagemagick.enabled %}
+      {% for i in site.imagemagick.widths %}
+        {% assign webp_path = image_base | append: "-" | append: i | append: ".webp" %}
+        {% assign static_webp_path = webp_path | prepend: "/" | replace: "//", "/" %}
+        {% assign webp_file = site.static_files | where: "path", static_webp_path | first %}
+        {% if webp_file %}
+          <source media="(max-width: {{ i }}px)" srcset="{{ webp_path | relative_url }}">
+        {% endif %}
+      {% endfor %}
+    {% endif %}
 
     <!-- Fallback to the original file -->
-    <img {% if include.class %}class="{{ include.class }}"{% endif %} src="{{ include.path | relative_url }}" {% if include.alt %}alt="{{ alt }}"{% endif %} {% if include.title %}title="{{ title }}"{% endif %} {% if include.zoomable %}data-zoomable{% endif %} />
+    <img {% if include.class %}class="{{ include.class }}"{% endif %} src="{{ image_path | relative_url }}" {% if include.alt %}alt="{{ include.alt }}"{% endif %} {% if include.title %}title="{{ include.title }}"{% endif %} {% if include.zoomable %}data-zoomable{% endif %} />
 
   </picture>
 

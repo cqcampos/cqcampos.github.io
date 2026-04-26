@@ -1,6 +1,6 @@
 // Ensure no-image column matches card background on hover
 .paper-card:hover .paper-image-col.no-image {
-    background: #f0f1f3 !important;
+    background: #f8f9fa !important;
 }
 html[data-theme='dark'] .paper-card:hover .paper-image-col.no-image {
     background: #2c2d31 !important;
@@ -55,17 +55,14 @@ html[data-theme='dark'] .paper-links a.btn:hover, html[data-theme='dark'] .paper
     margin-bottom: 1.5rem;
     padding: 0;
     overflow: hidden;
-    transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
 }
 
 .paper-card:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     border-color: var(--global-theme-color, #007bff);
-    border-width: 2.5px;
-    background: #f0f1f3;
-    transform: scale(1.012);
+    background: #f8f9fa;
     z-index: 2;
-    transition: box-shadow 0.18s, border-color 0.18s, border-width 0.18s, background 0.18s, transform 0.18s;
 }
 html[data-theme='dark'] .paper-card:hover {
     background: #2c2d31;
