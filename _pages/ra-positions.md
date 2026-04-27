@@ -7,7 +7,7 @@ nav: true
 
 ## Current Hiring
 
-Matt Notowidgdo and I are currently hiring a Research Professional to start Summer 2026. Apply [here.](https://www.chicagobooth.edu/-/media/faculty/research-professional-program/job-ads/2025-26/nc-rp-ad.pdf)
+I will be hiring a Research Professional to start Summer 2027. Applications will be available Fall 2026 and Spring 2027.
 
 
 ## Past RA Placement
