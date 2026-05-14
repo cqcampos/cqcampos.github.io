@@ -102,6 +102,13 @@
         <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
         {% endif %}
       {% endif %}
+      {% if entry.pap %}
+        {% if entry.pap contains '://' %}
+        <a href="{{ entry.pap }}" class="btn btn-sm z-depth-0" role="button">PAP</a>
+        {% else %}
+        <a href="{{ entry.pap | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PAP</a>
+        {% endif %}
+      {% endif %}
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
       {% endif %}
