@@ -75,6 +75,11 @@
     </div>
     {% endif %}
 
+    {% assign has_coverage = false %}
+    {% if entry.pdfbfi or entry.pod or entry.podbfi or entry.thesevenfour or entry.chalkbeat or entry.cato or entry.brookings or entry.cbr or entry.cbrvideo or entry.fordham or entry.marginal or entry.goodonpaper or entry.wheelock or entry.cpl or entry.laborcenter %}
+      {% assign has_coverage = true %}
+    {% endif %}
+
     <div class="paper-links">
       {% if entry.abstract %}
         <a class="btn btn-sm z-depth-0 abstract-toggle" role="button">Abstract</a>
@@ -132,29 +137,55 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
-      {% if entry.pdfbfi %}
-        <a href="{{ entry.pdfbfi }}" class="btn btn-sm z-depth-0" role="button">BFI Brief</a>
-      {% endif %}
-      {% if entry.pod %}
-        <a href="{{ entry.pod }}" class="btn btn-sm z-depth-0" role="button">Podcast</a>
-      {% endif %}
-      {% if entry.podbfi %}
-        <a href="{{ entry.podbfi }}" class="btn btn-sm z-depth-0" role="button">BFI Podcast</a>
-      {% endif %}
-      {% if entry.thesevenfour %}
-        <a href="{{ entry.thesevenfour }}" class="btn btn-sm z-depth-0" role="button">The 74</a>
-      {% endif %}
-      {% if entry.cbr %}
-        <a href="{{ entry.cbr }}" class="btn btn-sm z-depth-0" role="button">CBR</a>
-      {% endif %}
-      {% if entry.fordham %}
-        <a href="{{ entry.fordham }}" class="btn btn-sm z-depth-0" role="button">Fordham</a>
-      {% endif %}
-      {% if entry.marginal %}
-        <a href="{{ entry.marginal }}" class="btn btn-sm z-depth-0" role="button">Marginal Rev</a>
-      {% endif %}
-      {% if entry.goodonpaper %}
-        <a href="{{ entry.goodonpaper }}" class="btn btn-sm z-depth-0" role="button">Good on Paper</a>
+      {% if has_coverage %}
+        <div class="paper-coverage-links">
+          <span class="paper-link-label">In the Media</span>
+          {% if entry.pdfbfi %}
+            <a href="{{ entry.pdfbfi }}" class="btn btn-sm z-depth-0 coverage-link" role="button">BFI Brief</a>
+          {% endif %}
+          {% if entry.pod %}
+            <a href="{{ entry.pod }}" class="btn btn-sm z-depth-0 coverage-link" role="button">Podcast</a>
+          {% endif %}
+          {% if entry.podbfi %}
+            <a href="{{ entry.podbfi }}" class="btn btn-sm z-depth-0 coverage-link" role="button">BFI Podcast</a>
+          {% endif %}
+          {% if entry.thesevenfour %}
+            <a href="{{ entry.thesevenfour }}" class="btn btn-sm z-depth-0 coverage-link" role="button">The 74</a>
+          {% endif %}
+          {% if entry.chalkbeat %}
+            <a href="{{ entry.chalkbeat }}" class="btn btn-sm z-depth-0 coverage-link" role="button">Chalkbeat</a>
+          {% endif %}
+          {% if entry.cato %}
+            <a href="{{ entry.cato }}" class="btn btn-sm z-depth-0 coverage-link" role="button">Cato</a>
+          {% endif %}
+          {% if entry.brookings %}
+            <a href="{{ entry.brookings }}" class="btn btn-sm z-depth-0 coverage-link" role="button">Brookings</a>
+          {% endif %}
+          {% if entry.cbr %}
+            <a href="{{ entry.cbr }}" class="btn btn-sm z-depth-0 coverage-link" role="button">CBR</a>
+          {% endif %}
+          {% if entry.cbrvideo %}
+            <a href="{{ entry.cbrvideo }}" class="btn btn-sm z-depth-0 coverage-link" role="button">CBR Video</a>
+          {% endif %}
+          {% if entry.fordham %}
+            <a href="{{ entry.fordham }}" class="btn btn-sm z-depth-0 coverage-link" role="button">Fordham</a>
+          {% endif %}
+          {% if entry.marginal %}
+            <a href="{{ entry.marginal }}" class="btn btn-sm z-depth-0 coverage-link" role="button">Marginal Rev</a>
+          {% endif %}
+          {% if entry.goodonpaper %}
+            <a href="{{ entry.goodonpaper }}" class="btn btn-sm z-depth-0 coverage-link" role="button">Good on Paper</a>
+          {% endif %}
+          {% if entry.wheelock %}
+            <a href="{{ entry.wheelock }}" class="btn btn-sm z-depth-0 coverage-link" role="button">Wheelock</a>
+          {% endif %}
+          {% if entry.cpl %}
+            <a href="{{ entry.cpl }}" class="btn btn-sm z-depth-0 coverage-link" role="button">CPL</a>
+          {% endif %}
+          {% if entry.laborcenter %}
+            <a href="{{ entry.laborcenter }}" class="btn btn-sm z-depth-0 coverage-link" role="button">Labor Center</a>
+          {% endif %}
+        </div>
       {% endif %}
     </div>
   </div>

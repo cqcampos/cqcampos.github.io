@@ -156,6 +156,34 @@ html[data-theme='dark'] .paper-card:hover {
     text-decoration: none;
 }
 
+.paper-coverage-links {
+    display: block;
+    margin-top: 0.45rem;
+}
+
+.paper-link-label {
+    color: #6f7680;
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.paper-links a.coverage-link {
+    border-color: #8a8f98;
+    color: #5f6670 !important;
+    background: #f7f8fa !important;
+}
+
+.paper-links a.coverage-link:hover, .paper-links a.coverage-link:focus {
+    background: #5f6670 !important;
+    color: #fff !important;
+    border-color: #5f6670;
+}
+
 @media (max-width: 768px) {
     .paper-card {
         flex-direction: column;
