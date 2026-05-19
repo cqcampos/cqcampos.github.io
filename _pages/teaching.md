@@ -30,10 +30,10 @@ permalink: /teaching/
         <div>
           <dt>Resources</dt>
           <dd>
-            <a href="/assets/slides/lecture1.pdf">Lecture 1</a><br>
-            <a href="/assets/slides/lecture2.pdf">Lecture 2</a><br>
-            <a href="/assets/slides/lecture3.pdf">Lecture 3</a><br>
-            <a href="/assets/slides/lecture4.pdf">Lecture 4</a>
+            <a href="/assets/slides/lecture1.pdf">Human Capital</a><br>
+            <a href="/assets/slides/lecture2.pdf">Education Production</a><br>
+            <a href="/assets/slides/lecture3.pdf">Education Markets I</a><br>
+            <a href="/assets/slides/lecture4.pdf">Education Markets II</a>
           </dd>
         </div>
       </dl>
