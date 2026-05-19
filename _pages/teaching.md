@@ -27,6 +27,15 @@ permalink: /teaching/
           <dt>Co-instructor</dt>
           <dd>Jack Mountjoy</dd>
         </div>
+        <div>
+          <dt>Resources</dt>
+          <dd>
+            <a href="/assets/slides/lecture1.pdf">Lecture 1</a><br>
+            <a href="/assets/slides/lecture2.pdf">Lecture 2</a><br>
+            <a href="/assets/slides/lecture3.pdf">Lecture 3</a><br>
+            <a href="/assets/slides/lecture4.pdf">Lecture 4</a>
+          </dd>
+        </div>
       </dl>
     </article>
 
