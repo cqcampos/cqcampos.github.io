@@ -258,6 +258,22 @@ Your publications page is generated automatically from your BibTex bibliography.
 Simply edit `_bibliography/papers.bib`.
 You can also add new `*.bib` files and customize the look of your publications however you like by editing `_pages/publications.md`.
 
+To add separate appendix buttons, upload the PDFs to `assets/pdf/` and add these
+optional fields alongside `pdf` in the paper's bibliography entry:
+
+```bibtex
+  pdf={choice_system_design.pdf},
+  online_appendix={online_appendix.pdf},
+  supplementary_appendix={supplementary_appendix.pdf},
+```
+
+Use your actual uploaded filenames, or a full `https://...` URL for an externally
+hosted appendix. The buttons are labeled **Online Appendix** and **Supplementary
+Appendix**; each appears only when its field is nonempty. For the choice-system
+paper (`campos2025decentralized`), update the entry in both
+`_bibliography/papers.bib` (homepage selected papers) and `_bibliography/wp.bib`
+(Research page working papers). Both publication layouts support these fields.
+
 <p align="center"><img src="https://raw.githubusercontent.com/alshedivat/al-folio/master/assets/img/publications-screenshot.png" width=800></p>
 
 <details><summary>(click to expand) <strong>Author annotation:</strong></summary>

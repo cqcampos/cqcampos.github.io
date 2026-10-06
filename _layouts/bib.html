@@ -102,6 +102,7 @@
       <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
       {% endif %}
     {% endif %}
+    {% include appendix_links.html entry=entry %}
     {% if entry.pdfbfi %}
       {% if entry.pdfbfi contains '://' %}
       <a href="{{ entry.pdfbfi }}" class="btn btn-sm z-depth-0" role="button">BFI Research Brief</a>

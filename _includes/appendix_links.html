@@ -1,0 +1,14 @@
+{% assign online_appendix = include.entry.online_appendix | default: '' | strip %}
+{% if online_appendix != '' %}
+  {% unless online_appendix contains '://' %}
+    {% assign online_appendix = online_appendix | prepend: '/assets/pdf/' | relative_url %}
+  {% endunless %}
+  <a href="{{ online_appendix | escape }}" class="btn btn-sm z-depth-0" role="button">Online Appendix</a>
+{% endif %}
+{% assign supplementary_appendix = include.entry.supplementary_appendix | default: '' | strip %}
+{% if supplementary_appendix != '' %}
+  {% unless supplementary_appendix contains '://' %}
+    {% assign supplementary_appendix = supplementary_appendix | prepend: '/assets/pdf/' | relative_url %}
+  {% endunless %}
+  <a href="{{ supplementary_appendix | escape }}" class="btn btn-sm z-depth-0" role="button">Supplementary Appendix</a>
+{% endif %}
