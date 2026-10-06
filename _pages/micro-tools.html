@@ -56,6 +56,13 @@ description: Interactive visualizations for BUS 33001 — Microeconomics at Chic
     <li><a href="#viz-22">Returns to Scale &amp; the Shape of Costs</a></li>
     <li><a href="#viz-23">Short-Run vs Long-Run Costs</a></li>
   </ol>
+  <h4>Lecture 7: Oligopoly &amp; Game Theory</h4>
+  <ol start="24">
+    <li><a href="#viz-24">Cournot Best Response Diagram</a></li>
+    <li><a href="#viz-25">N-Firm Cournot: Monopoly &#8594; Competition</a></li>
+    <li value="27"><a href="#viz-27">Bertrand Price War: The Race to the Bottom</a></li>
+    <li value="29"><a href="#viz-29">Market Structure Comparison</a></li>
+  </ol>
 </div>
 
 <!-- ============================================================ -->
@@ -456,6 +463,75 @@ description: Interactive visualizations for BUS 33001 — Microeconomics at Chic
   </div>
 </section>
 
+<!-- ============================================================ -->
+<!--  LECTURE 7: OLIGOPOLY & GAME THEORY                          -->
+<!-- ============================================================ -->
+<h2 class="micro-lecture-header">Lecture 7: Oligopoly &amp; Game Theory</h2>
+
+<!-- ---- Viz 24 ---- -->
+<section id="viz-24" class="micro-viz-section">
+  <h3 class="micro-viz-title">24. Cournot Best Response Diagram</h3>
+  <p class="micro-scenario">In Cournot duopoly each firm picks a quantity assuming the rival&#8217;s output is fixed. Each firm&#8217;s <em>best response</em> (reaction curve) is a downward-sloping line: the more the rival produces, the less you want to add. <strong>Drag the point</strong> to any (q&#8321;, q&#8322;) combination &#8212; arrows show each firm&#8217;s incentive to deviate, and the panel below reports the resulting price, profits, and best-response targets. The Nash Equilibrium is the unique point where neither firm wants to move.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-24"></div>
+      <div class="micro-info" id="info-24"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-24"></div>
+      <div class="micro-math" id="math-24"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 25 ---- -->
+<section id="viz-25" class="micro-viz-section">
+  <h3 class="micro-viz-title">25. N-Firm Cournot: Monopoly &#8594; Competition</h3>
+  <p class="micro-scenario">What happens as an industry moves from monopoly (1 firm) to many competitors? With N symmetric Cournot firms (P = 100 &#8722; 2Q, MC = $4) the equilibrium price P* = (100 + 4N)/(N+1) falls continuously toward marginal cost as N grows. The left panel shows the current market outcome (CS, total profit, DWL); the right panel traces P*(N) for N = 1&#8230;20. Drag the slider to see how market structure shapes welfare.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-25"></div>
+      <div class="micro-info" id="info-25"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-25"></div>
+      <div class="micro-math" id="math-25"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 27 ---- -->
+<section id="viz-27" class="micro-viz-section">
+  <h3 class="micro-viz-title">27. Bertrand Price War: The Race to the Bottom</h3>
+  <p class="micro-scenario">Bertrand duopolists compete on <em>price</em> rather than quantity. The logic is brutal: the lower-priced firm captures the whole market, so each firm always wants to undercut the rival by a penny. This race to the bottom ends only at P = MC &#8212; competitive pricing with just two firms! Use the sliders and <em>undercut</em> buttons to trace the price war in real time and see why even a duopoly can produce the competitive outcome.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-27"></div>
+      <div class="micro-info" id="info-27"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-27"></div>
+      <div class="micro-math" id="math-27"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Viz 29 ---- -->
+<section id="viz-29" class="micro-viz-section">
+  <h3 class="micro-viz-title">29. Market Structure Comparison</h3>
+  <p class="micro-scenario">How do the four canonical market structures stack up? Toggle between Perfect Competition, Cournot Duopoly, Stackelberg Duopoly, and Monopoly to see how price, quantity, consumer surplus, producer profit, and deadweight loss change. All use the same demand curve P = 100 &#8722; 2Q and MC = 4 so the welfare comparisons are apples-to-apples.</p>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="micro-controls" id="controls-29"></div>
+      <div class="micro-info" id="info-29"></div>
+    </div>
+    <div class="col-lg-8">
+      <div class="micro-chart" id="chart-29"></div>
+      <div class="micro-math" id="math-29"></div>
+    </div>
+  </div>
+</section>
+
 </div><!-- /.micro-tools-page -->
 
 <!-- ============ Scripts ============ -->
@@ -483,3 +559,7 @@ description: Interactive visualizations for BUS 33001 — Microeconomics at Chic
 <script src="/assets/js/micro-tools/viz-21-cost-minimization.js"></script>
 <script src="/assets/js/micro-tools/viz-22-returns-to-scale.js"></script>
 <script src="/assets/js/micro-tools/viz-23-sr-lr-costs.js"></script>
+<script src="/assets/js/micro-tools/viz-24-cournot-best-response.js"></script>
+<script src="/assets/js/micro-tools/viz-25-n-firm-cournot.js"></script>
+<script src="/assets/js/micro-tools/viz-27-bertrand.js"></script>
+<script src="/assets/js/micro-tools/viz-29-market-structures.js"></script>
