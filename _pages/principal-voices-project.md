@@ -2,7 +2,7 @@
 layout: page
 permalink: /principal-voices-project/
 title: Principal Voices Project
-nav: true
+nav: false
 ---
 
 {% include figure.html path="assets/img/principal-voices-logo.png" class="img-fluid" %}
