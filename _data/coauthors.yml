@@ -1,12 +1,16 @@
 "Kearns":
   - firstname: ["Caitlin"]
-    url: https://sites.google.com/view/ckearns
+    url: https://www.nber.org/people/caitlin_kearns
 
 "Rothstein":
   - firstname: ["Jesse"]
-    url: https://eml.berkeley.edu/~jrothst/
+    url: https://jesse-rothstein.com/
  
 "Munoz":
+  - firstname: ["Pablo"]
+    url: https://sites.google.com/view/pablomh
+
+"Muñoz":
   - firstname: ["Pablo"]
     url: https://sites.google.com/view/pablomh
   
@@ -16,7 +20,7 @@
   
 "Contreras":
   - firstname: ["Dante"]
-    url: https://econ.uchile.cl/es/academico/dcontrer
+    url: https://sites.google.com/view/dante-contreras-uchile
     
 "Bernhardt":
   - firstname: ["Annette"]
@@ -24,7 +28,7 @@
 
 "Ramesh":
   - firstname: ["Aparna"]
-    url: https://www.capolicylab.org/staff/aparna-ramesh/
+    url: https://capolicylab.org/author/aparna-ramesh/
 
 "Bruhn":
   - firstname: ["Jesse"]
@@ -44,7 +48,7 @@
 
 "Neilson":
   - firstname: ["Christopher"]
-    url: https://christopherneilson.github.io/
+    url: https://www.christopher-neilson.com/
 
 "Barrios-Fernandez":
   - firstname: ["Andres"]
@@ -56,7 +60,7 @@
 
 "Virkola":
   - firstname: ["Tuomo"]
-    url: https://sites.google.com/view/tuomovirkola
+    url: https://tvirkola.github.io/
 
 "Singleton":
   - firstname: ["John"]
@@ -73,3 +77,27 @@
 "Bucarey":
   - firstname: ["Alonso"]
     url: https://sites.google.com/view/alonso-bucarey/
+
+"Harris":
+  - firstname: ["Douglas", "Douglas N.", "Doug"]
+    url: https://www.douglasnharris.com/
+
+"Lee":
+  - firstname: ["Ryan"]
+    url: https://bfi.uchicago.edu/people/ryan-lee/
+
+"Shrivatsa":
+  - firstname: ["Ishira"]
+    url: https://economics.uchicago.edu/directory/ishira-shrivatsa
+
+"Tran":
+  - firstname: ["Anh"]
+    url: https://www.nber.org/people/anh_tran_2
+
+"Prohofsky":
+  - firstname: ["Allen"]
+    url: https://www.nber.org/people/allen_prohofsky
+
+"Leppanen":
+  - firstname: ["Otto"]
+    url: https://www.helsinkigse.fi/members/otto-leppanen
